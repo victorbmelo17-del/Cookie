@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Rush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Cookie Rush</h1>
+      <p>Um mini-game de mira, tempo e estratégia. Informe seu nome, escolha a dificuldade e tente bater o recorde do navegador.</p>
+    </header>
+
+    <section class="setup">
+      <label>
+        Nome do jogador
+        <input id="playerName" placeholder="Digite seu nome" maxlength="16" />
+      </label>
+      <label>
+        Dificuldade
+        <select id="difficulty">
+          <option value="easy">Fácil</option>
+          <option value="medium" selected>Médio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </label>
+      <button id="startButton">Começar</button>
+    </section>
+
+    <div class="scoreboard">
+      <div><strong id="score">0</strong><span> pontos</span></div>
+      <div><strong id="time">0.0s</strong><span> tempo</span></div>
+      <div><strong id="levelName">Médio</strong><span> nível</span></div>
+      <div><strong id="highScore">0</strong><span> recorde</span></div>
+      <div><strong id="recordName">---</strong><span> recordista</span></div>
+    </div>
+
+    <div class="arena" id="gameArea">
+      <div class="cookie" id="target"></div>
+      <div class="hint">Cuidado: clicar fora do biscoito reduz 1 ponto. O alvo encolhe com o tempo.</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
