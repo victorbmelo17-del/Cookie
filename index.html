@@ -13,6 +13,7 @@
       <p>Um mini-game de mira, tempo e estratégia. Informe seu nome, escolha a dificuldade e tente bater o recorde do navegador.</p>
     </header>
 
+    <!-- Controles de configuração do jogador -->
     <section class="setup">
       <label>
         Nome do jogador
@@ -29,6 +30,7 @@
       <button id="startButton">Começar</button>
     </section>
 
+    <!-- Painel de pontuação e informações da partida -->
     <div class="scoreboard">
       <div><strong id="score">0</strong><span> pontos</span></div>
       <div><strong id="time">0.0s</strong><span> tempo</span></div>
@@ -37,11 +39,14 @@
       <div><strong id="recordName">---</strong><span> recordista</span></div>
     </div>
 
+    <!-- Área de jogo onde o alvo se move -->
     <div class="arena" id="gameArea">
       <div class="cookie" id="target"></div>
       <div class="hint">Cuidado: clicar fora do biscoito reduz 1 ponto. O alvo encolhe com o tempo.</div>
     </div>
   </div>
+
+  <!-- Lógica do jogo -->
   <script src="script.js"></script>
 </body>
 </html>
